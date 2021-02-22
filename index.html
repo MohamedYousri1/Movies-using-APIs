@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <title>Hello Movies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <section class="app-body pt-5">
+        <div class="container pt-3 mb-5">
+            <div class="row">
+                <div class="col-md-6 mb-4 ">
+                    <input id="searchByWord" type="text" class="searchByWord bg-transparent input-group" placeholder="get movies by word... ">
+                </div>
+
+                <div class="col-md-6">
+                    <input id="searching" type="text" class="search bg-transparent input-group" placeholder="Search... ">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id="movies--contents" class="row"></div>
+        </div>
+    </section>
+
+    <section class="sidebar">
+        <div class="contents d-flex flex-column justify-content-between ">
+            <!-- all Contents  -->
+            <div class="navigator">
+                <ul class="list-unstyled ">
+                    <li>
+                        <a data-filter='now_playing' class=" text-capitalize" href="#0">Now playing</a>
+                    </li>
+
+                    <li>
+                        <a data-filter="popular" class=" text-capitalize" href="#0">Popular</a>
+                    </li>
+
+                    <li>
+                        <a data-filter="top_rated" class=" text-capitalize" href="#0">Top Rated</a>
+                    </li>
+
+                    <li>
+                        <a data-filter="trending" class=" text-capitalize" href="#0">Trending</a>
+                    </li>
+
+                    <li>
+                        <a data-filter="upcoming" class=" text-capitalize" href="#0">Upcoming</a>
+                    </li>
+
+                    <li>
+                        <a class="contact" class=" text-capitalize" href="#0">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer--items ml-4 pb-5">
+                <a href="#0"><i class="fab fa-facebook-f"></i></a>
+                <a href="#0"><i class="fab fa-twitter"></i></a>
+                <a href="#0"><i class="fas fa-globe"></i></a>
+                <div class="pt-3">
+                    <span class="copyRight">Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="controls  bg-white d-flex justify-content-between align-items-center flex-column">
+            <!-- Right Control  -->
+            <div class="logo  mt-4 mx-auto">
+                <img class="img-fluid" src="img/logo.png" alt="">
+            </div>
+
+            <div class="icon--controls text-center ">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="social-icons d-flex flex-column mb-4 ">
+                <i class="fas fa-globe mb-3"></i>
+                <i class="fas fa-share-alt"></i>
+            </div>
+        </div>
+        <div class="clear-fix"></div>
+    </section>
+
+    <div id="contact" class="contact-us pb-5">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-left my-5 text-light mostUsed-color">ContactUs...</h2>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <input id="userName" type="text" placeholder="Enter Your Name" class=" input-group bg-transparent">
+                    <div class="wrong-name d-none  alert alert-danger ">Your Name is Wrong </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <input id="email" type="email" placeholder="Enter Your Email" class=" input-group bg-transparent">
+                    <div class="wrong-email  d-none alert alert-danger">Your Email is Wrong </div>
+                </div>
+
+
+                <div class="col-md-6 mb-4">
+                    <input id="phone" type="number" placeholder="Enter Your Phone" class=" input-group bg-transparent">
+                    <div class="wrong-phone  d-none alert alert-danger">Your Phone is Wrong </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <input id="age" type="number" placeholder="Enter Your Age" class=" input-group bg-transparent">
+                    <div class="wrong-age  d-none alert alert-danger">Your Age is Wrong </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <input id="passWord" type="password" placeholder="Enter Your password" class=" input-group bg-transparent">
+                    <div class="wrong-password  d-none alert alert-danger">Your pass is Wrong </div>
+                </div>
+
+                <div class="col-md-6 mb-4">
+                    <input id="rePassWord" type="password" placeholder="Enter Your password" class=" input-group bg-transparent">
+                    <div class="wrong-repassword   d-none alert alert-danger">Your password is Wrong </div>
+                </div>
+
+                <button id="submit" class="btn btn-outline-danger ml-3 mb-3">Submit</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
